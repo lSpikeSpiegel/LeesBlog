@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/LeesBlog/',
     title: "Lee's Blog",
     description: '李巳的个人博客，记录一些学习和撸码过程中的事情',
     theme: 'reco',
