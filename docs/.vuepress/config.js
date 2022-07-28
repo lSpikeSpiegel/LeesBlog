@@ -30,7 +30,8 @@ module.exports = {
                 children: [
                     { title: "vuepress快速上手", path: "/studyNotes/vuepress/01vuepress快速上手" },
                     { title: "进行一些简单的自定义修改", path: "/studyNotes/vuepress/10进行一些简单的自定义修改" },
-                    { title: "使用主题", path: "/studyNotes/vuepress/20使用主题" }
+                    { title: "使用主题", path: "/studyNotes/vuepress/20使用主题" },
+                    { title: "博客发布", path: "/studyNotes/vuepress/30博客发布" }
                 ],
             }
         ],
