@@ -9,8 +9,6 @@ tags:
   - vuepress
 ---
 
-本文假定你已经有一些项目经验，如果不清楚以下步骤，请移步学习更基础的前端开发文档; 同时, 本片文章大幅借鉴, 或者说是抄袭了 冴羽 的 [《一篇带你用 VuePress + Github Pages 搭建博客》](https://mp.weixin.qq.com/s/v3crO1YPkYdDwiCFZ-QJvg) , 不过本文仅作为个人笔记供大家参考使用, 不做仁任何商业用途 , 如果侵权将会自行删除。
-
 ### 创建项目
 
 创建并进入文件目录
@@ -57,22 +55,22 @@ mkdir .vuepress
 
 3.  现在, 我们在 config.js 中配置网站的标题和描述,便于 SEO
 
-```
+```js
 // 这里你可以随意描述你的博客
 module.exports = {
- title:'my blog',
- description:'使用vuepress开发的个人博客'
+  title: 'my blog',
+  description: '使用vuepress开发的个人博客'
 }
 ```
 
 5. 在 package.json 中添加一些 scripts
 
-```
+```json
 {
-    "scripts":{
-        "dev":"vuepress dev docs",
-        "build":"vuepress build doc"
-    }
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build doc"
+  }
 }
 ```
 
