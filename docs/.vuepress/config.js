@@ -44,7 +44,7 @@ module.exports = {
                 path: '/studyNotes/TypeScript/index',
                 collapsable: true,// 默认折叠
                 children: [
-                    { title: "HelloWorld", path: "/studyNotes/vuepress/01HelloWorld" },
+                    { title: "HelloWorld", path: "/studyNotes/TypeScript/01HelloWorld" },
                 ],
             }
         ],
