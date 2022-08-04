@@ -5,6 +5,8 @@ module.exports = {
     title: "Lee's Blog",
     description: '李巳的个人博客，记录一些学习和撸码过程中的事情',
     theme: 'reco',
+    author: '李巳',
+    huawei: true,
     locales: {
         '/': {
             lang: 'zh-CN'
@@ -29,12 +31,20 @@ module.exports = {
             {
                 title: "vuepress",
                 path: '/studyNotes/vuepress/index',
-                collapsable: true, // 不折叠
+                collapsable: true,// 默认折叠
                 children: [
                     { title: "vuepress快速上手", path: "/studyNotes/vuepress/01vuepress快速上手" },
                     { title: "进行一些简单的自定义修改", path: "/studyNotes/vuepress/10进行一些简单的自定义修改" },
                     { title: "使用主题", path: "/studyNotes/vuepress/20使用主题" },
                     { title: "部署", path: "/studyNotes/vuepress/30部署" }
+                ],
+            },
+            {
+                title: "TypeScript",
+                path: '/studyNotes/TypeScript/index',
+                collapsable: true,// 默认折叠
+                children: [
+                    { title: "HelloWorld", path: "/studyNotes/vuepress/01HelloWorld" },
                 ],
             }
         ],
@@ -48,12 +58,9 @@ module.exports = {
                 text: '标签'      // 默认文案 “标签”
             }
         },
-        vssueConfig: {
-            platform: 'github',
-            owner: 'OWNER_OF_REPO',
-            repo: 'NAME_OF_REPO',
-            clientId: 'YOUR_CLIENT_ID',
-            clientSecret: 'YOUR_CLIENT_SECRET',
+        valineConfig: {
+            appId: 'bsH47H8gAuSasqU5bR0Irz4y-gzGzoHsz',// your appId
+            appKey: 'rlUu2lWbzHt413W7dqAa1s3y', // your appKey
         }
     },
     plugins: [
